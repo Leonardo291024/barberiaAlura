@@ -36,6 +36,35 @@
             font-size: 22px;
             text-decoration: none;
         }
+
+        .productos{
+            width: 940px;
+            margin: 0 auto;
+            padding: 50px;
+        }
+
+        .productos li{
+            display: inline-block;
+            text-align: center;
+            width: 30%;
+            vertical-align: top;
+        }
+
+        .productos h2{
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .producto-descripcion{
+            font-size: 18px;
+        }
+
+        .producto-precio{
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -64,24 +93,24 @@
     </header>
 
     <main>
-        <ul>
+        <ul class="productos">
             <li>
                 <h2>cabello</h2>
                 <img src="./banner/cabello.jpg" alt="">
-                <p>Con tijera o maquina a gusto del cliente</p>
-                <p>$10.00</p>
+                <p class="producto-descripcion">Con tijera o maquina a gusto del cliente</p>
+                <p class="producto-precio">$10.00</p>
             </li>
             <li>
                 <h2>barba</h2>
                 <img src="./banner/barba.jpg" alt="">
-                <p>corte y diseño profesional de barba</p>
-                <p>$8.00</p>
+                <p class="producto-descripcion">corte y diseño profesional de barba</p>
+                <p class="producto-precio">$8.00</p>
             </li>
             <li>
                 <h2> cabello + barba</h2>
                 <img src="./banner/cabello+barba.jpg" alt="">
-                <p>paquete completo de cabello y barba</p>
-                <p>$15.00</p>
+                <p class="producto-descripcion">paquete completo de cabello y barba</p>
+                <p class="producto-precio">$15.00</p>
             </li>
         </ul>
     </main>
