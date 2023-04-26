@@ -37,6 +37,11 @@
             text-decoration: none;
         }
 
+        nav a:hover{
+            color: orange;
+            text-decoration:underline;
+        }
+
         .productos{
             width: 940px;
             margin: 0 auto;
@@ -52,13 +57,26 @@
             padding: 30px 20px;
             box-sizing: border-box;
             border: 1px solid black;
-            border-radius: 8px;
+            border-radius: 10px 25px 40px 50px;
+            cursor: pointer;
+        }
+
+        .productos li:hover{
+            border: 1px solid orange;
+        }
+
+        .productos li:active{
+            border: 1px solid green;
         }
 
         .productos h2{
             font-size: 30px;
             font-weight: bold;
             text-align: center;
+        }
+
+        .productos li:hover h2{
+            font-size: 33px;
         }
 
         .producto-descripcion{
