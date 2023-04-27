@@ -1,16 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header{
+    display: inline-table;
+    width: 100%;
     background-color: #cccccc;
     padding: 20px 0 ;
 }
 
 .caja{
-    position: relative;
+    /*position: relative;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 940px;
     margin: 0 auto;
 }
 
 nav{
-    position: absolute;
+    /*position: absolute;*/
     top: 110px;
     right:0;
 }
