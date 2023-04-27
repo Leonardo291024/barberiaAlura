@@ -1,0 +1,156 @@
+header{
+    background-color: #cccccc;
+    padding: 20px 0 ;
+}
+
+.caja{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right:0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: orange;
+    text-decoration:underline;
+}
+
+/* MAIN**********************************/
+
+.div-principal{
+    padding: 20px 20px;
+}
+
+.banner{
+    width: 100%;
+}
+
+.principal{
+    padding: 20px;
+}
+
+h2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+p{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+em strong{
+    color: red;
+}
+
+.mision{
+    font-size: 20px;
+}
+
+.diferenciales{
+    background-color: white;
+    padding: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.diferencialesUl{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.items{
+    font-style: italic;
+    list-style: none;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+
+.imagenDiferenciales{
+    width: 50%;
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px 25px 40px 50px;
+    cursor: pointer;
+}
+
+.productos li:hover{
+    border: 1px solid orange;
+}
+
+.productos li:active{
+    border: 1px solid green;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/*FOOTER*******************************/
+
+footer{
+    text-align: center;
+    background-image: url(./banner/bg.jpg);
+    padding: 40px;
+}
+
+.copyrigth{
+    color: white;
+    font-size: 13px;
+    margin: 20px;
+}
