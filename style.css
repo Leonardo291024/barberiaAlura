@@ -6,7 +6,6 @@
 
 header{
     display: inline-table;
-    width: 100%;
     background-color: #cccccc;
     padding: 20px 0 ;
 }
@@ -45,7 +44,9 @@ nav a:hover{
 }
 
 /* MAIN**********************************/
-
+main{
+    display: inline-table;
+}
 .div-principal{
     padding: 20px 20px;
 }
