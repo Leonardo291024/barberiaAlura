@@ -9,45 +9,54 @@ html{
 }
 
 header{
-    display: inline-table;
     width: 100%;
-    background-color: #cccccc;
-    padding: 20px 0 ;
+    background-color: gray;
 }
 
 .caja{
-    /*position: relative;*/
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 940px;
-    margin: 0 auto;
+    justify-content: space-around;
 }
 
-nav{
-    /*position: absolute;*/
-    top: 110px;
-    right:0;
+.caja .logo{
+    width: 100px;
 }
 
-nav li{
-    display: inline;
-    margin: 0 0 0 15px;
+.navegadorMobile{
+    position: absolute;
+    top: 141px;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    padding-top: 10px;
+    background-color: #cccccc;
 }
 
-nav a{
-    text-transform: uppercase;
-    color: black;
-    font-weight: bold;
-    font-size: 3.5rem;
+.navegadorMobile ul{
+    list-style: none;
+}
+
+.navegadorMobile ul li{
+    margin-bottom: 10px;
+}
+
+.navegadorMobile a{
     text-decoration: none;
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: black;
 }
 
-nav a:hover{
-    color: orange;
-    text-decoration:underline;
+.navegadorMobile a:hover{
+    color: orangered;
 }
 
+.navegadorDesktop{
+    display: none;
+}
 /* MAIN**********************************/
 main{
     display: inline-table;
