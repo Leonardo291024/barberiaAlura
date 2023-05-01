@@ -24,6 +24,10 @@ header{
     width: 100px;
 }
 
+.inactive{
+    display: none;
+}
+
 .navegadorMobile{
     position: absolute;
     top: 141px;
