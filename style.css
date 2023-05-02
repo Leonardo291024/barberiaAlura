@@ -102,7 +102,7 @@ em strong{
     background-color: white;
     padding: 30px;
     margin-top: 20px;
-    text-align: center;
+    text-align: start;
 }
 
 .diferencialesUl{
@@ -113,6 +113,7 @@ em strong{
 }
 
 .items{
+    color: red;
     font-style: italic;
     list-style: none;
     margin-bottom: 15px;
@@ -123,7 +124,7 @@ em strong{
 
 
 .imagenDiferenciales{
-    width: 50%;
+    display: none;
 }
 
 .productos{
@@ -183,8 +184,7 @@ footer{
     text-align: center;
     background-image: url(./banner/bg.jpg);
     padding: 40px;
-    min-width: 950px;
-    height: 532px;
+   
 }
 
 

@@ -27,3 +27,14 @@
     color: orangered;
     text-decoration: underline;
 }
+
+main .diferenciales{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main .imagenDiferenciales{
+    width: 50%;
+    display: flex;
+}
