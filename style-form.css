@@ -93,6 +93,24 @@ form label, form p{
     transform: scale(1.2);
 }
 
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+td{
+    font-size: 1.6rem;
+}
+
+td ,th{
+    border: 1px solid black;
+    padding: 8px 15px;
+}
 /*FOOTER*******************************/
 
 footer{
