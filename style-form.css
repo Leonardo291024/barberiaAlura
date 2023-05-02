@@ -75,6 +75,23 @@ form label, form p{
     margin: 20px 0;
 }
 
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    background-color: orangered;
+    border: none;
+    border-radius: 8px;
+    transition: 1s background;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background-color: darkorange;
+}
+
 /*FOOTER*******************************/
 
 footer{
