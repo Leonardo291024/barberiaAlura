@@ -84,12 +84,13 @@ form label, form p{
     background-color: orangered;
     border: none;
     border-radius: 8px;
-    transition: 1s background;
+    transition: 1s all;
     cursor: pointer;
 }
 
 .enviar:hover{
     background-color: darkorange;
+    transform: scale(1.2);
 }
 
 /*FOOTER*******************************/
