@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/*ESTILOS DEL HEADER*/
+header{
+    width: 100%;
+    background-color: gray;
+}
+
+.caja{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.caja .logo{
+    width: 100px;
+}
+
+.navegadorDesktop{
+    display: flex;
+}
+
+.navegadorDesktop .navegacion{
+    list-style: none;
+
+}
+
+.navegacion li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.navegadorDesktop a{
+    text-decoration: none;
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: black;
+}
+
+.navegadorDesktop a:hover{
+    color: orangered;
+    text-decoration: underline;
+}
+
+#icon-menu-mobile{
+    display: none;
+}
+
+.inactive{
+    display: none;
+}
+/*ESTILOS DEL HEADER*/
+
+/*ESTILOS DEL MAIN*/
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos  img{
+    width: 100%;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px 25px 40px 50px;
+    cursor: pointer;
+}
+
+.productos li:hover{
+    border: 1px solid orange;
+}
+
+.productos li:active{
+    border: 1px solid green;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.productos li:hover h2{
+    font-size: 31px;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+/*ESTILOS DEL MAIN*/
+
+/*ESTILOS DEL FOOTER*/
+footer{
+    text-align: center;
+    background-image: url(./banner/bg.jpg);
+    padding: 40px;
+   
+}
+
+
+.copyrigth{
+    color: white;
+    font-size: 2.8rem;
+    margin: 20px;
+}
+/*ESTILOS DEL FOOTER*/
