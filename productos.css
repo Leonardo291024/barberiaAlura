@@ -61,20 +61,26 @@ header{
 /*ESTILOS DEL HEADER*/
 
 /*ESTILOS DEL MAIN*/
-.productos{
-    width: 940px;
-    margin: 0 auto;
-    padding: 50px;
-}
-
-.productos  img{
+main{
     width: 100%;
+    height: auto;
+    padding: 20px 20px;
 }
 
-.productos li{
+.productos-container{
+    display: flex;
+    height: auto;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.productos-container-card{
     display: inline-block;
     text-align: center;
-    width: 30%;
+    width: 70%;
+    max-width: 320px;
+    min-width: 190px;
     vertical-align: top;
     margin: 0 1.5%;
     padding: 30px 20px;
@@ -84,32 +90,28 @@ header{
     cursor: pointer;
 }
 
-.productos li:hover{
+.productos-container-card:hover{
     border: 1px solid orange;
 }
 
-.productos li:active{
+.productos-container-card:active{
     border: 1px solid green;
 }
 
-.productos h2{
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
+.productos-container-card:hover h1{
+    font-size: 3.1rem;
 }
 
-.productos li:hover h2{
-    font-size: 31px;
+.productos-container-card h1{
+    font-size: 3.0rem;
 }
 
-.producto-descripcion{
-    font-size: 18px;
+.productos-container p{
+    font-size: 2.0rem;
 }
 
-.producto-precio{
-    font-size: 28px;
-    font-weight: bold;
-    margin-top: 10px;
+.productos-container-card img{
+    width: 100%;
 }
 /*ESTILOS DEL MAIN*/
 
@@ -128,3 +130,52 @@ footer{
     margin: 20px;
 }
 /*ESTILOS DEL FOOTER*/
+
+@media(max-width: 640px){
+
+    #icon-menu-mobile{
+        display: flex;
+    }
+
+    .inactive{
+        display: none;
+    }
+    
+    .navegadorMobile{
+        position: absolute;
+        top: 141px;
+        left: 0;
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+        padding-top: 10px;
+        background-color: #cccccc;
+    }
+    
+    .navegadorMobile ul{
+        list-style: none;
+    }
+    
+    .navegadorMobile ul li{
+        margin-bottom: 10px;
+    }
+    
+    .navegadorMobile a{
+        text-decoration: none;
+        font-size: 2.0rem;
+        font-weight: bold;
+        color: black;
+    }
+    
+    .navegadorMobile a:hover{
+        color: orangered;
+    }
+    
+    .navegadorDesktop{
+        display: none;
+    }
+
+    .imagenDiferenciales{
+        display: none;
+    }
+}

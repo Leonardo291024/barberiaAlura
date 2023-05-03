@@ -6,101 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./productos.css">
     <title>Productos</title>
-    <!--style>
-        header{
-            background-color: #cccccc;
-            padding: 20px 0 ;
-        }
-
-        .caja{
-            position: relative;
-            width: 940px;
-            margin: 0 auto;
-        }
-
-        nav{
-            position: absolute;
-            top: 110px;
-            right:0;
-        }
-
-        nav li{
-            display: inline;
-            margin: 0 0 0 15px;
-        }
-
-        nav a{
-            text-transform: uppercase;
-            color: black;
-            font-weight: bold;
-            font-size: 22px;
-            text-decoration: none;
-        }
-
-        nav a:hover{
-            color: orange;
-            text-decoration:underline;
-        }
-
-        .productos{
-            width: 940px;
-            margin: 0 auto;
-            padding: 50px;
-        }
-
-        .productos li{
-            display: inline-block;
-            text-align: center;
-            width: 30%;
-            vertical-align: top;
-            margin: 0 1.5%;
-            padding: 30px 20px;
-            box-sizing: border-box;
-            border: 1px solid black;
-            border-radius: 10px 25px 40px 50px;
-            cursor: pointer;
-        }
-
-        .productos li:hover{
-            border: 1px solid orange;
-        }
-
-        .productos li:active{
-            border: 1px solid green;
-        }
-
-        .productos h2{
-            font-size: 30px;
-            font-weight: bold;
-            text-align: center;
-        }
-
-        .productos li:hover h2{
-            font-size: 33px;
-        }
-
-        .producto-descripcion{
-            font-size: 18px;
-        }
-
-        .producto-precio{
-            font-size: 28px;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-
-        footer{
-            text-align: center;
-            background-image: url(./banner/bg.jpg);
-            padding: 40px;
-        }
-
-        .copyrigth{
-            color: white;
-            font-size: 13px;
-            margin: 20px;
-        }
-    </!--style-->
 </head>
 <body>
     <header>
@@ -141,26 +46,34 @@
     </header>
 
     <main>
-        <ul class="productos">
-            <li>
-                <h2>cabello</h2>
+        <section class="productos-container">
+            <article class="productos-container-card">
+                <h1>Cabello</h1>
                 <img src="./banner/cabello.jpg" alt="">
-                <p class="producto-descripcion">Con tijera o maquina a gusto del cliente</p>
-                <p class="producto-precio">$10.00</p>
-            </li>
-            <li>
-                <h2>barba</h2>
+                <p>Con tijera o maquina a gusto del cliente</p>
+                <p>
+                    $10.00
+                </p>
+            </article>
+               
+            <article class="productos-container-card">
+                <h1>Barba</h1>
                 <img src="./banner/barba.jpg" alt="">
-                <p class="producto-descripcion">corte y diseño profesional de barba</p>
-                <p class="producto-precio">$8.00</p>
-            </li>
-            <li>
-                <h2> cabello + barba</h2>
+                <p>Corte y diseño profesional de barba</p>
+                <p>
+                    $8.00
+                </p>
+            </article>
+
+            <article class="productos-container-card">
+                <h1>Cabello + Barba</h1>
                 <img src="./banner/cabello+barba.jpg" alt="">
-                <p class="producto-descripcion">paquete completo de cabello y barba</p>
-                <p class="producto-precio">$15.00</p>
-            </li>
-        </ul>
+                <p>Paquete completo de cabello mas barba</p>
+                <p>
+                    $15.00
+                </p>
+            </article>
+        </section>
     </main>
 
     <footer>
