@@ -141,3 +141,52 @@ footer{
     margin: 20px;
 }
 /*ESTILOS DEL FOOTER*/
+
+@media(max-width: 640px){
+
+    #icon-menu-mobile{
+        display: flex;
+    }
+
+    .inactive{
+        display: none;
+    }
+    
+    .navegadorMobile{
+        position: absolute;
+        top: 141px;
+        left: 0;
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+        padding-top: 10px;
+        background-color: #cccccc;
+    }
+    
+    .navegadorMobile ul{
+        list-style: none;
+    }
+    
+    .navegadorMobile ul li{
+        margin-bottom: 10px;
+    }
+    
+    .navegadorMobile a{
+        text-decoration: none;
+        font-size: 2.0rem;
+        font-weight: bold;
+        color: black;
+    }
+    
+    .navegadorMobile a:hover{
+        color: orangered;
+    }
+    
+    .navegadorDesktop{
+        display: none;
+    }
+
+    .imagenDiferenciales{
+        display: none;
+    }
+}
