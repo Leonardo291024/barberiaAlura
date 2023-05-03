@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./desktop.css" media="(min-width: 700px)">
     <title>Barberia</title>
 </head>
 <body>
@@ -12,8 +13,23 @@
             <div class="caja">
                 
                 <img src="./banner/logo.png" alt="" class="logo">
+                <img src="./banner/icon_menu.svg" alt="" id="icon-menu-mobile">
+
+                <aside class="navegadorMobile inactive">
+                    <ul class="navegacion">
+                        <li>
+                            <a href="#sobreNosotros">Home</a>
+                        </li>
+                        <li>
+                            <a href="#proDuctos">Productos</a>
+                        </li>
+                        <li>
+                            <a href="#contactosId">Contactos</a>
+                        </li>
+                    </ul>
+                </aside>
         
-                    <nav>
+                    <nav class="navegadorDesktop">
                         <ul class="navegacion">
                             <li>
                                 <a href="/productos.html">Home</a>
@@ -30,7 +46,7 @@
             
         </header>
     <main>
-    <!--img src="./banner/banner.jpg" alt="" class="banner"-->
+    
     <div class="div-principal" id="sobreNosotros">
         <div class="principal">
             <h2>Sobre la Barberia</h2>
@@ -55,7 +71,7 @@
     </div>
     
 
-        <ul class="productos" id="proDuctos">
+        <!--ul class="productos" id="proDuctos">
             <li>
                 <h2>cabello</h2>
                 <img src="./banner/cabello.jpg" alt="">
@@ -74,15 +90,15 @@
                 <p class="producto-descripcion">paquete completo de cabello y barba</p>
                 <p class="producto-precio">$15.00</p>
             </li>
-        </ul>
+        </!--ul-->
     </main>
 
-    <footer id="contactosId">
-        <img src="./banner/logo-blanco.png" alt="">
+    <footer >
+        <img src="./banner/logo-blanco.png" alt="" class="logoFooter">
         <p class="copyrigth">&copy Copyrigth Barberia Alura 2020</p>
     </footer>
     
 
-    
+    <script src="./main.js"></script>
 </body>
 </html>
