@@ -8,54 +8,69 @@ html{
     font-size: 62.5%;
 }
 
+/*ESTILOS DEL HEADER*/
 header{
-    display: inline-table;
     width: 100%;
-    background-color: #cccccc;
-    padding: 20px 0 ;
+    background-color: gray;
 }
 
 .caja{
-    /*position: relative;*/
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 940px;
-    margin: 0 auto;
+    justify-content: space-around;
 }
 
-nav{
-    /*position: absolute;*/
-    top: 110px;
-    right:0;
+.caja .logo{
+    width: 100px;
 }
 
-nav li{
-    display: inline;
-    margin: 0 0 0 15px;
+.navegadorDesktop{
+    display: flex;
 }
 
-nav a{
-    text-transform: uppercase;
-    color: black;
-    font-weight: bold;
-    font-size: 3.5rem;
+.navegadorDesktop .navegacion{
+    list-style: none;
+
+}
+
+.navegacion li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.navegadorDesktop a{
     text-decoration: none;
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: black;
 }
 
-nav a:hover{
-    color: orange;
-    text-decoration:underline;
+.navegadorDesktop a:hover{
+    color: orangered;
+    text-decoration: underline;
 }
 
-/* MAIN**********************************/
+#icon-menu-mobile{
+    display: none;
+}
+
+.inactive{
+    display: none;
+}
+/*ESTILOS DEL HEADER*/
+
+/*ESTILOS DEL MAIN*/
 main{
-    width: 940px;
-    margin: 0 auto;
+    width: 100%;
+    padding: 20px 40px;
+   
 }
 
 form{
-    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 form label, form p{
@@ -93,7 +108,15 @@ form label, form p{
     transform: scale(1.2);
 }
 
+.tabla-horarios-container{
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
 table{
+    min-width: 220px;
     margin: 40px 40px;
 }
 
@@ -111,14 +134,20 @@ td ,th{
     border: 1px solid black;
     padding: 8px 15px;
 }
+
+form input{
+    margin-bottom: 15px;
+}
+/*ESTILOS DEL MAIN*/
+
+
+
 /*FOOTER*******************************/
 
 footer{
     text-align: center;
     background-image: url(./banner/bg.jpg);
     padding: 40px;
-    min-width: 950px;
-    height: 532px;
 }
 
 
@@ -126,4 +155,65 @@ footer{
     color: white;
     font-size: 2.8rem;
     margin: 20px;
+}
+
+@media(max-width: 640px){
+
+    #icon-menu-mobile{
+        display: flex;
+    }
+
+    .inactive{
+        display: none;
+    }
+    
+    .navegadorMobile{
+        position: absolute;
+        top: 141px;
+        left: 0;
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+        padding-top: 10px;
+        background-color: #cccccc;
+    }
+    
+    .navegadorMobile ul{
+        list-style: none;
+    }
+    
+    .navegadorMobile ul li{
+        margin-bottom: 10px;
+    }
+    
+    .navegadorMobile a{
+        text-decoration: none;
+        font-size: 2.0rem;
+        font-weight: bold;
+        color: black;
+    }
+    
+    .navegadorMobile a:hover{
+        color: orangered;
+    }
+    
+    .navegadorDesktop{
+        display: none;
+    }
+
+    .imagenDiferenciales{
+        display: none;
+    }
+
+    .input-padron{
+        width: 80%;
+    }
+
+    .enviar{
+        width: 90%;
+    }
+
+    .tabla-horarios-container{
+        justify-content: center;
+    }
 }

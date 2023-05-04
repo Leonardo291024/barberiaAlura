@@ -10,19 +10,34 @@
 <body>
     <header>
         <div class="caja">
-            
-            <img src="./banner/logo.png" alt="logoAlura" class="logo">
+                
+            <img src="./banner/logo.png" alt="" class="logo">
+            <img src="./banner/icon_menu.svg" alt="" id="icon-menu-mobile">
+
+            <aside class="navegadorMobile inactive">
+                <ul class="navegacion">
+                    <li>
+                        <a href="/home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="/productos.html">Productos</a>
+                    </li>
+                    <li>
+                        <a href="/formulario.html">Contactos</a>
+                    </li>
+                </ul>
+            </aside>
     
-                <nav>
+                <nav class="navegadorDesktop">
                     <ul class="navegacion">
                         <li>
-                            <a href="/index.html">Home</a>
+                            <a href="/home.html">Home</a>
                         </li>
                         <li>
-                            <a href="#proDuctos">Productos</a>
+                            <a href="/productos.html">Productos</a>
                         </li>
                         <li>
-                            <a href="#contactosId">Contactos</a>
+                            <a href="/formulario.html">Contactos</a>
                         </li>
                     </ul>
                 </nav>
@@ -31,79 +46,87 @@
     </header>
 
     <main>
-        <form action="">
-            <label for="nombreApellido">Nombre y apellido</label>
-            <input type="text" id="nombreApellido" class="input-padron" required>
+        <section>
+            <form action="">
+                <label for="nombreApellido">Nombre y apellido</label>
+                <input type="text" id="nombreApellido" class="input-padron" required>
+    
+                <label for="correo">Correo Electronico</label>
+                <input type="email" id="correo" class="input-padron" required placeholder="email@dominio.com">
+    
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXX XXXX">
+    
+                <label for="mensaje">Mensaje</label>
+                <textarea name="" id="mensaje" class="input-padron"cols="70" rows="10"></textarea required>
+    
+                <div>
+                    <p>¿Como le gustaria que lo contactemos?</p>
+    
+                    <label for="radio-email"><input type="radio" id="radio-email" name="contacto">
+                        Email</label>
+                    
+                    <label for="radio-telefono"><input type="radio" id="radio-telefono" name="contacto">
+                        Telefono</label>
+                    
+                    <label for="radio-wasap"><input type="radio" id="radio-wasap" name="contacto" checked> Whasapt</label>
+                                   
+                </div>
+    
+                <div>
+                    <p>¿En cual horario prefiere ser atendido?</p>
+    
+                    <select name="" id="">
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </div>
+    
+                <label for="" class="checkbox">
+                    <input type="checkbox" checked>
+                    Le gustaria recivir mensajes de la barberia alura
+                </label>
+    
+                <input type="submit" value="Enviar Formulario" class="enviar">
+            </form>
 
-            <label for="correo">Correo Electronico</label>
-            <input type="email" id="correo" class="input-padron" required placeholder="email@dominio.com">
-
-            <label for="telefono">Telefono</label>
-            <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXX XXXX">
-
-            <label for="mensaje">Mensaje</label>
-            <textarea name="" id="mensaje" class="input-padron"cols="70" rows="10"></textarea required>
-
-            <div>
-                <p>¿Como le gustaria que lo contactemos?</p>
-
-                <label for="radio-email"><input type="radio" id="radio-email" name="contacto">
-                    Email</label>
-                
-                <label for="radio-telefono"><input type="radio" id="radio-telefono" name="contacto">
-                    Telefono</label>
-                
-                <label for="radio-wasap"><input type="radio" id="radio-wasap" name="contacto" checked> Whasapt</label>
-                               
-            </div>
-
-            <div>
-                <p>¿En cual horario prefiere ser atendido?</p>
-
-                <select name="" id="">
-                    <option>Mañana</option>
-                    <option>Tarde</option>
-                    <option>Noche</option>
-                </select>
-            </div>
-
-            <label for="" class="checkbox">
-                <input type="checkbox" checked>
-                Le gustaria recivir mensajes de la barberia alura
-            </label>
-
-            <input type="submit" value="Enviar Formulario" class="enviar">
-        </form>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Dias</th>
-                    <th>Horario</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>Lunes</td>
-                    <td>8am - 20pm</td>
-                </tr>
-                <tr>
-                    <td>Miercoles</td>
-                    <td>8am - 20pm</td>
-                </tr>
-                <tr>
-                    <td>Viernes</td>
-                    <td>8am - 20pm</td>
-                </tr>
-            </tbody>
-            
-        </table>
+            <section class="tabla-horarios-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dias</th>
+                            <th>Horario</th>
+                        </tr>
+                    </thead>
+        
+                    <tbody>
+                        <tr>
+                            <td>Lunes</td>
+                            <td>8am - 20pm</td>
+                        </tr>
+                        <tr>
+                            <td>Miercoles</td>
+                            <td>8am - 20pm</td>
+                        </tr>
+                        <tr>
+                            <td>Viernes</td>
+                            <td>8am - 20pm</td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+            </section>
+    
+        </section>
+       
     </main>
 
     <footer id="contactosId">
         <img src="./banner/logo-blanco.png" alt="logoAlura">
         <p class="copyrigth">&copy Copyrigth Barberia Alura 2020</p>
     </footer>
+
+    <script src="./main.js"></script>
 </body>
 </html>
