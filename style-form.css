@@ -108,7 +108,15 @@ form label, form p{
     transform: scale(1.2);
 }
 
+.tabla-horarios-container{
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
 table{
+    min-width: 220px;
     margin: 40px 40px;
 }
 
@@ -140,8 +148,6 @@ footer{
     text-align: center;
     background-image: url(./banner/bg.jpg);
     padding: 40px;
-    min-width: 950px;
-    height: 532px;
 }
 
 
@@ -197,5 +203,17 @@ footer{
 
     .imagenDiferenciales{
         display: none;
+    }
+
+    .input-padron{
+        width: 80%;
+    }
+
+    .enviar{
+        width: 90%;
+    }
+
+    .tabla-horarios-container{
+        justify-content: center;
     }
 }
