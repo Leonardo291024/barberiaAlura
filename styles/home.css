@@ -65,6 +65,10 @@ main{
     width: 100%;
 }
 
+.imagenBannner{
+    width: 100%;
+}
+
 .div-principal{
     display: flex;
     flex-direction: column;
