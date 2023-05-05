@@ -69,6 +69,7 @@ main{
 
 .productos-container{
     display: flex;
+    justify-content: center;
     height: auto;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
