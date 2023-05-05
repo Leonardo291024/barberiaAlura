@@ -119,7 +119,7 @@ main{
 /*ESTILOS DEL FOOTER*/
 footer{
     text-align: center;
-    background-image: url(./banner/bg.jpg);
+    background-image: url(/banner/bg.jpg);
     padding: 40px;
    
 }
