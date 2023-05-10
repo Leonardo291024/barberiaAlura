@@ -80,7 +80,7 @@ main{
     padding: 0 120px;
 }
 
-.principal h2{
+.principal, .mapa .titulos{
     font-size: 3.0rem;
     font-weight: bold;
     font-style: italic;
@@ -107,6 +107,10 @@ em strong{
 
 .mision{
     font-size: 3.3rem;
+}
+
+.mapa{
+    padding: 3em 0;
 }
 
 .diferenciales{
