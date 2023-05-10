@@ -62,9 +62,9 @@ header{
 /*ESTILOS DEL HEADER*/
 
 /*ESTILOS DEL MAIN*/
-main{
+/*main{
     width: 100%;
-}
+}*/
 
 .imagenBannner{
     width: 100%;
@@ -74,6 +74,7 @@ main{
     display: flex;
     flex-direction: column;
     padding: 20px 20px;
+    background-color: #FEFEFE;
 }
 
 .principal{
@@ -111,11 +112,18 @@ em strong{
 
 .mapa{
     padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa-container{
+    width: 940px;
+    margin: 0 auto;
 }
 
 .diferenciales{
-   width: 640px;
-   margin: 0 auto;
+    width: 100%;
+    padding: 20px 20px;
+    background-color: rgb(161, 157, 157);
 }
 
 .diferencialesUl{
@@ -130,7 +138,7 @@ em strong{
     line-height: 1.5;
 }
 
-.items:nth-child(1){
+.items:first-child{
     font-weight: bold;
 }
 
