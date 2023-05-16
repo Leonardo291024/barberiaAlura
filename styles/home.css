@@ -81,12 +81,16 @@ header{
     padding: 0 120px;
 }
 
-.principal, .mapa .titulos{
+.principal, .diferenciales, .mapa .titulos{
     font-size: 3.0rem;
     font-weight: bold;
     font-style: italic;
     margin-bottom: 10px;
     text-align: center;
+}
+
+.titulos::first-letter{
+    color: orangered;
 }
 
 .principal .utensilios{
@@ -112,7 +116,7 @@ em strong{
 
 .mapa{
     padding: 3em 0;
-    background: linear-gradient(#FEFEFE, #888888);
+   
 }
 
 .mapa-container{
@@ -123,7 +127,7 @@ em strong{
 .diferenciales{
     width: 100%;
     padding: 20px 20px;
-    background-color: rgb(161, 157, 157);
+   
 }
 
 .diferencialesUl{
@@ -136,6 +140,10 @@ em strong{
     list-style: none;
     font-size: 2.0rem;
     line-height: 1.5;
+}
+
+.items::before{
+    content: "★";
 }
 
 .items:first-child{
