@@ -70,7 +70,6 @@ main{
 
 .productos-container{
     display: flex;
-    justify-content: center;
     height: auto;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
@@ -80,12 +79,10 @@ main{
 .productos-container-card{
     display: inline-block;
     text-align: center;
-    width: 70%;
-    max-width: 320px;
     min-width: 190px;
     vertical-align: top;
     margin: 0 1.5%;
-    padding: 30px 20px;
+    padding: 30px 30px;
     box-sizing: border-box;
     border: 1px solid black;
     border-radius: 10px 25px 40px 50px;
