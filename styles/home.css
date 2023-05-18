@@ -77,7 +77,7 @@ header{
 }
 
 .principal{
-    padding: 0 120px;
+    padding: 20px 20px;
 }
 
 .principal, .diferenciales, .mapa .titulos{
@@ -221,6 +221,10 @@ footer{
     }
     
     .navegadorDesktop{
+        display: none;
+    }
+
+    .utensilios{
         display: none;
     }
 
