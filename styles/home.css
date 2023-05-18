@@ -118,7 +118,7 @@ em strong{
 }
 
 .mapa-container{
-    width: 940px;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -159,7 +159,7 @@ em strong{
 }
 
 .video{
-    width: 560px;
+    width: 40%;
     margin: 1em auto;
 }
 /*ESTILOS DEL MAIN*/
@@ -230,5 +230,9 @@ footer{
 
     .imagenDiferenciales{
         display: none;
+    }
+
+    .video{
+        width: 90%;
     }
 }
