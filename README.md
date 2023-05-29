@@ -1,4 +1,4 @@
 # BarberiaAlura
 
-https://leonardo291024.github.io/barberiaAlura/home
+https://leonardo291024.github.io/barberiaAlura/home/
 
